@@ -63,12 +63,15 @@
 			<artifactId>jjwt</artifactId>
 			<version>0.9.1</version>
 		</dependency>		
+<<<<<<< HEAD
 		<dependency>
 		    <groupId>org.springframework.boot</groupId>
 		    <artifactId>spring-boot-starter-test</artifactId>
 		    <version>2.4.3</version>
 		    <scope>test</scope>
 		</dependency>		
+=======
+>>>>>>> be2bcd8fbdeae42d680effe67ba26b036f027297
 	</dependencies>
 
 	<build>
