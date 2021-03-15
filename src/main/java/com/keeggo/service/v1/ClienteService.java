@@ -1,13 +1,13 @@
-package com.keeggo.service;
+package com.keeggo.service.v1;
 
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.keeggo.exception.ResourceNotFoundException;
-import com.keeggo.model.Cliente;
-import com.keeggo.repository.ClienteRepository;
+import com.keeggo.exception.v1.ResourceNotFoundException;
+import com.keeggo.model.v1.Cliente;
+import com.keeggo.repository.v1.ClienteRepository;
 
 @Service
 public class ClienteService {
@@ -37,6 +37,10 @@ public class ClienteService {
 		entity.setEmail(Cliente.getEmail());
 		entity.setCpf(Cliente.getCpf());
 		entity.setEndereco(Cliente.getEndereco());
+		entity.setCep(Cliente.getCep());
+		entity.setCidade(Cliente.getCidade());
+		entity.setEstado(Cliente.getEstado());
+		entity.setBairro(Cliente.getBairro());
 		
 		return repository.save(entity);
 	}	
